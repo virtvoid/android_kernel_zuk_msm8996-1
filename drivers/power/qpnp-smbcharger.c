@@ -3961,8 +3961,10 @@ static void smbchg_jeita_temp_monitor_work(struct work_struct *work)
 				dev_err(chip->dev,
 					"Couldn't vote battchg thermal camera (charging disable) %d\n", rc);
 			else {
+#ifdef SUPPORT_QPNP_NOISE_LOG
 				dev_err(chip->dev,
 						"Vote battchg thermal camera (charging disable) %d\n", rc);
+#endif
 				g_camera_charge_enable = 0;
 			}
 		} else if ((temp < chip->temp_thres_low_for_camera_charge_disable) && !g_camera_charge_enable) {
@@ -3971,9 +3973,11 @@ static void smbchg_jeita_temp_monitor_work(struct work_struct *work)
 			if (rc < 0)
 				dev_err(chip->dev,
 					"Couldn't vote battchg thermal camera (charging enable) %d\n", rc);
-			else{
+			else {
+#ifdef SUPPORT_QPNP_NOISE_LOG
 				dev_err(chip->dev,
 					"Vote battchg thermal camera (charging enable) %d\n", rc);
+#endif
 				g_camera_charge_enable = 1;
 			}
 		}
@@ -3985,8 +3989,10 @@ static void smbchg_jeita_temp_monitor_work(struct work_struct *work)
 				dev_err(chip->dev,
 					"Couldn't vote battchg thermal camera (charging enable) %d\n", rc);
 			else{
+#ifdef SUPPORT_QPNP_NOISE_LOG
 				dev_err(chip->dev,
 					"Vote battchg thermal camera (charging enable) %d\n", rc);
+#endif
 				g_camera_charge_enable = 1;
 			}
 	}
