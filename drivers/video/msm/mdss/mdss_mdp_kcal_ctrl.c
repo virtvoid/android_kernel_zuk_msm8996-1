@@ -554,14 +554,14 @@ static int kcal_ctrl_probe(struct platform_device *pdev)
 
 	platform_set_drvdata(pdev, lut_data);
 
-	lut_data->enable = 0x1; // KCAL driver is on by default
+	lut_data->enable = 1;
 	lut_data->red = DEF_PCC;
 	lut_data->green = DEF_PCC;
 	lut_data->blue = DEF_PCC;
 	lut_data->minimum = 0x23;
 	lut_data->invert = 0x0;
 	lut_data->hue = 0x0;
-	lut_data->sat = 0x110;
+	lut_data->sat = 0x105;
 	lut_data->val = DEF_PA;
 	lut_data->cont = DEF_PA;
 
