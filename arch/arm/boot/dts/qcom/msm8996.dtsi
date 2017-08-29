@@ -61,6 +61,8 @@
 		CPU0: cpu@0 {
 			device_type = "cpu";
 			compatible = "qcom,kryo";
+			clock-frequency = <1766400>;
+			efficiency = <2048>;
 			reg = <0x0 0x0>;
 			qcom,limits-info = <&mitigation_profile0>;
 			enable-method = "psci";
@@ -83,6 +85,8 @@
 		CPU1: cpu@1 {
 			device_type = "cpu";
 			compatible = "qcom,kryo";
+			clock-frequency = <1766400>;
+			efficiency = <2048>;
 			reg = <0x0 0x1>;
 			qcom,limits-info = <&mitigation_profile1>;
 			enable-method = "psci";
@@ -100,6 +104,8 @@
 		CPU2: cpu@100 {
 			device_type = "cpu";
 			compatible = "qcom,kryo";
+			clock-frequency = <2304000>;
+			efficiency = <2048>;
 			reg = <0x0 0x100>;
 			qcom,limits-info = <&mitigation_profile2>;
 			enable-method = "psci";
@@ -122,6 +128,8 @@
 		CPU3: cpu@101 {
 			device_type = "cpu";
 			compatible = "qcom,kryo";
+			clock-frequency = <2304000>;
+			efficiency = <2048>;
 			reg = <0x0 0x101>;
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile3>;
