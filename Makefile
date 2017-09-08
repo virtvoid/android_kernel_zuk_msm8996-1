@@ -403,9 +403,9 @@ LINUXINCLUDE    := \
 KBUILD_CPPFLAGS := -D__KERNEL__
 
 KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
-		   -fno-strict-aliasing -fno-common \
-		   -Werror-implicit-function-declaration \
-		   -Wno-format-security \
+		   -fno-strict-aliasing -fno-common -Wno-unused-const-variable \
+		   -Werror-implicit-function-declaration -Wno-misleading-indentation \
+		   -Wno-format-security -Wno-bool-compare \
 		   -std=gnu89
 
 KBUILD_AFLAGS_KERNEL :=
