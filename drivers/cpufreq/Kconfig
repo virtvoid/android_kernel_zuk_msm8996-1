@@ -233,6 +233,12 @@ config CPUFREQ_DT
 
 	  If in doubt, say N.
 
+config VOID_CRAZY_GPU_OC
+	bool "Overclock GPU to 710 MHz like on Adreno 540. Probably unstable, beware!"
+	default n
+	help
+	  Overclock GPU to 710 MHz like on Adreno 540. Probably unstable, beware!
+
 config CPU_BOOST
 	tristate "Event base short term CPU freq boost"
 	depends on CPU_FREQ
