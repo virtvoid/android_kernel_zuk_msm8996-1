@@ -232,7 +232,11 @@ static struct alpha_pll_vco_tbl alt_pll_vco_modes[] = {
 	VCO(2,  500000000,  750000000),
 	VCO(1,  750000000, 1000000000),
 #if defined CONFIG_PRODUCT_Z2_PLUS || defined CONFIG_PRODUCT_Z2_ROW
+#ifdef CONFIG_VOID_CRAZY_CPU_OC
+	VCO(0, 1000000000, 2323200000),
+#else
 	VCO(0, 1000000000, 2304000000),
+#endif
 #else
 	VCO(0, 1000000000, 2150400000),
 #endif

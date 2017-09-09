@@ -233,6 +233,12 @@ config CPUFREQ_DT
 
 	  If in doubt, say N.
 
+config VOID_CRAZY_CPU_OC
+        bool "Overclock CPU to max 1.8/2.4 GHz. Probably unstable, beware!"
+        default n
+        help
+	  Overclock CPU to max 1.8/2.4 GHz. Probably unstable, beware!
+
 config VOID_CRAZY_GPU_OC
 	bool "Overclock GPU to 710 MHz like on Adreno 540. Probably unstable, beware!"
 	default n
