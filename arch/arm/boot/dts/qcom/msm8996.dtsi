@@ -62,7 +62,7 @@
 			device_type = "cpu";
 			compatible = "qcom,kryo";
 #ifdef CONFIG_VOID_CRAZY_CPU_OC
-			clock-frequency = <1824000>;
+			clock-frequency = <1804800>;
 #else
 			clock-frequency = <1766400>;
 #endif
@@ -90,7 +90,7 @@
 			device_type = "cpu";
 			compatible = "qcom,kryo";
 #ifdef CONFIG_VOID_CRAZY_CPU_OC
-			clock-frequency = <1824000>;
+			clock-frequency = <1804800>;
 #else
 			clock-frequency = <1766400>;
 #endif
