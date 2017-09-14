@@ -234,10 +234,10 @@ config CPUFREQ_DT
 	  If in doubt, say N.
 
 config VOID_CRAZY_CPU_OC
-        bool "Overclock CPU to max 1.82/2.32 GHz. Probably unstable, beware!"
+        bool "Overclock CPU to max 1.8/2.32 GHz. Probably unstable, beware!"
         default n
         help
-	  Overclock CPU to max 1.82/2.32 GHz, increase bus speeds.
+	  Overclock CPU to max 1.8/2.32 GHz, increase bus speeds.
 	  Probably unstable, beware!
 
 config VOID_CRAZY_GPU_OC
